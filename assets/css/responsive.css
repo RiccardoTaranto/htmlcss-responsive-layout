@@ -21,9 +21,9 @@ x - Il padding del contenuto principale della pagina aumenta,
 x - Compare il testo "(Dolce Tradizionale)",
 x - La grandezza del titolo diventa più grande,
 x - Le informazioni della ricetta sotto il video si dispongono a griglia,
-- I bottoni social si allargano,
+x - I bottoni social si allargano,
 x - compare il banner pubblicitario,
-- l'immagine nella descrizione della ricetta viene circondata dal testo,
+x - l'immagine nella descrizione della ricetta viene circondata dal testo,
 */
 
 @media screen and (min-width: 768px) {
@@ -43,8 +43,6 @@ x - compare il banner pubblicitario,
             display: inline-block;
         }
 
-
-
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -61,9 +59,13 @@ x - compare il banner pubblicitario,
 
         .social-network {
             .btn {
-                padding: 10px 30px;
+                padding: 10px 40px;
             }
         }
+
+        .presentation img {
+            float: inline-start;
+            margin 0 20px;
     }
 
 
