@@ -1,15 +1,5 @@
 /* Soluzione qui */
 
-/* -- Modalità Tablet (sopra i 480px) -- */
-
-@media screen and (min-width: 480px) {
-  
-    #topbar {
-        justify-content: flex-start;
-    }
-  
-}
-
 /* -- Bonus, Modalità Large Mobile (576px) --
 
 l'immagine nella descrizione della ricetta viene circondata dal testo anche su mobile ma solo se c'è spazio sufficiente, quindi a partire da 576px,
@@ -41,6 +31,9 @@ x - Il logo nell'header si allinea a sinistra,
 
 @media screen and (min-width: 768px) {
   
+    #topbar {
+        justify-content: flex-start;
+    }
   
 }
 
