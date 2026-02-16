@@ -22,7 +22,7 @@ x - Compare il testo "(Dolce Tradizionale)",
 x - La grandezza del titolo diventa più grande,
 x - Le informazioni della ricetta sotto il video si dispongono a griglia,
 - I bottoni social si allargano,
-- compare il banner pubblicitario,
+x - compare il banner pubblicitario,
 - l'immagine nella descrizione della ricetta viene circondata dal testo,
 */
 
@@ -32,33 +32,43 @@ x - Le informazioni della ricetta sotto il video si dispongono a griglia,
         justify-content: flex-start;
     }
 
-        main {
-            padding: 40px;
+    main {
+        padding: 40px;
 
-            .recipe-title {
-                font-size: 24px;
+        .recipe-title {
+            font-size: 24px;
+        }
+
+        .recipe-origin {
+            display: inline-block;
+        }
+
+
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            li {
+                flex-basis: calc(100% / 3 - (15px * 2) / 3);
             }
+        }
 
-            .recipe-origin {
-                display: inline-block;
+        .ads {
+            display: block;
+        }
+
+        .social-network {
+            .btn {
+                padding: 10px 30px;
             }
-
-
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 15px;
-
-                li {
-                    flex-basis: calc(100% / 3 - (15px * 2) / 3);
-                }
-            }
-
-            .ads {
-                display: block;
         }
     }
+
+
+
+
 
 
 
