@@ -11,10 +11,7 @@ Il font per il resto della pagina è: Montserrat, 'Helvetica Neue', sans-serif;,
 L'indirizzo del video YT utilizzato è https://www.youtube.com/watch?v=JVT900H6s0g,
 */
 
-@media screen and (min-width: 576px) {
-  
-  
-}
+@media screen and (min-width: 576px) {}
 
 
 /* -- Modalità Tablet (sopra i 768px) --
@@ -23,14 +20,14 @@ x - Il logo nell'header si allinea a sinistra,
 x - Il padding del contenuto principale della pagina aumenta,
 x - Compare il testo "(Dolce Tradizionale)",
 x - La grandezza del titolo diventa più grande,
-- Le informazioni della ricetta sotto il video si dispongono a griglia,
+x - Le informazioni della ricetta sotto il video si dispongono a griglia,
 - I bottoni social si allargano,
 - compare il banner pubblicitario,
 - l'immagine nella descrizione della ricetta viene circondata dal testo,
 */
 
 @media screen and (min-width: 768px) {
-  
+
     #topbar {
         justify-content: flex-start;
     }
@@ -45,12 +42,23 @@ x - La grandezza del titolo diventa più grande,
         .recipe-origin {
             display: inline-block;
         }
+
+
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            li {
+                flex-basis: calc(100% / 3 - (15px * 2) / 3);
+            }
+        }
+
     }
-  
-}
 
 
-/* -- Modalità Desktop (sopra i 992px) --
+    /* -- Modalità Desktop (sopra i 992px) --
 
 La grandezza el titolo della ricetta aumenta ancora di più,
 Le informazioni della ricetta tornano a disporsi una sotto l'altra,
@@ -59,7 +67,4 @@ Compaiono i nomi delle piattaforme social,
 Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti,
 */
 
-@media screen and (min-width: 992px) {
-  
-  
-}
+    @media screen and (min-width: 992px) {}
