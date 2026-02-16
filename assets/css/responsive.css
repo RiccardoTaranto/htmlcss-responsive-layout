@@ -22,7 +22,7 @@ L'indirizzo del video YT utilizzato è https://www.youtube.com/watch?v=JVT900H6
 x - Il logo nell'header si allinea a sinistra,
 x - Il padding del contenuto principale della pagina aumenta,
 x - Compare il testo "(Dolce Tradizionale)",
-- La grandezza del titolo diventa più grande,
+x - La grandezza del titolo diventa più grande,
 - Le informazioni della ricetta sotto il video si dispongono a griglia,
 - I bottoni social si allargano,
 - compare il banner pubblicitario,
@@ -37,6 +37,10 @@ x - Compare il testo "(Dolce Tradizionale)",
 
     main {
         padding: 40px;
+
+        .recipe-title {
+            font-size: 24px;
+        }
 
         .recipe-origin {
             display: inline-block;
