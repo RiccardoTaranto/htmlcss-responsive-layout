@@ -65,7 +65,8 @@ x - l'immagine nella descrizione della ricetta viene circondata dal testo,
 
         .presentation img {
             float: inline-start;
-            margin 0 20px;
+            padding: 1rem;
+        }
     }
 
 
