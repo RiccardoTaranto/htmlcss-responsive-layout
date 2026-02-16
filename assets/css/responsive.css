@@ -20,8 +20,8 @@ L'indirizzo del video YT utilizzato è https://www.youtube.com/watch?v=JVT900H6
 /* -- Modalità Tablet (sopra i 768px) --
 
 x - Il logo nell'header si allinea a sinistra,
-- Il padding del contenuto principale della pagina aumenta,
-- Compare il testo "(Dolce Tradizionale)",
+x - Il padding del contenuto principale della pagina aumenta,
+x - Compare il testo "(Dolce Tradizionale)",
 - La grandezza del titolo diventa più grande,
 - Le informazioni della ricetta sotto il video si dispongono a griglia,
 - I bottoni social si allargano,
@@ -33,6 +33,14 @@ x - Il logo nell'header si allinea a sinistra,
   
     #topbar {
         justify-content: flex-start;
+    }
+
+    main {
+        padding: 40px;
+
+        .recipe-origin {
+            display: inline-block;
+        }
     }
   
 }
