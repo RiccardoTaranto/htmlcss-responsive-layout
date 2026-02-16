@@ -1,30 +1,21 @@
 /* Soluzione qui */
 
-/* -- Bonus, Modalità Large Mobile (576px) --
 
-l'immagine nella descrizione della ricetta viene circondata dal testo anche su mobile ma solo se c'è spazio sufficiente, quindi a partire da 576px,
-I bottoni social si allagano già su dispositivi mobile più grandetti (576px),
+@media screen and (min-width: 576px) {
 
-Info,
-Il font utilizzato per il titolo è: 'Nerko One', cursive;,
-Il font per il resto della pagina è: Montserrat, 'Helvetica Neue', sans-serif;,
-L'indirizzo del video YT utilizzato è https://www.youtube.com/watch?v=JVT900H6s0g,
-*/
+    .social-networks {
+        .btn {
+            padding: 10px 40px;
+        }
+    }
 
-@media screen and (min-width: 576px) {}
+    .presentation img {
+        float: inline-start;
+        padding: 1rem;
+    }
 
 
-/* -- Modalità Tablet (sopra i 768px) --
-
-x - Il logo nell'header si allinea a sinistra,
-x - Il padding del contenuto principale della pagina aumenta,
-x - Compare il testo "(Dolce Tradizionale)",
-x - La grandezza del titolo diventa più grande,
-x - Le informazioni della ricetta sotto il video si dispongono a griglia,
-x - I bottoni social si allargano,
-x - compare il banner pubblicitario,
-x - l'immagine nella descrizione della ricetta viene circondata dal testo,
-*/
+}
 
 @media screen and (min-width: 768px) {
 
@@ -69,16 +60,6 @@ x - l'immagine nella descrizione della ricetta viene circondata dal testo,
         }
     }
 
-
-    /* -- Modalità Desktop (sopra i 992px) --
-
-x - La grandezza el titolo della ricetta aumenta ancora di più,
-x - Le informazioni della ricetta tornano a disporsi una sotto l'altra,
-- Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro,
-x - Compaiono i nomi delle piattaforme social,
-x - Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti,
-*/
-
     @media screen and (min-width: 992px) {
 
         #topbar {
@@ -94,6 +75,13 @@ x - Nel footer i dati del sito e il menu di navigazione di dispongono sulla stes
 
             .recipe-origin {
                 display: inline-block;
+            }
+
+            .recipe-card {
+                display: flex;
+
+                /* aprire tickert e verificare - Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
+
             }
 
             .ads {
@@ -123,5 +111,5 @@ x - Nel footer i dati del sito e il menu di navigazione di dispongono sulla stes
             address {
                 text-align: start;
 
+            }
         }
-    }
