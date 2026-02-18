@@ -78,11 +78,19 @@
             }
 
             .recipe-card {
+                /* da vedere con Max */
                 display: flex;
-
-                /* aprire tickert e verificare - Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
-
             }
+
+            .recipe-video {
+                flex-grow: 1;
+                height: auto;
+            }
+
+            ul {
+                display: block;
+            }
+
 
             .ads {
                 display: block;
